@@ -203,9 +203,11 @@ h6,
 .logo {
     position: relative;
     padding: 10px;
-    right: auto; /* Align to the right */ 
-    width: 80px; /* Adjust the size of the logo */
-    height: 80px; /* Maintain the aspect ratio */
+    left:auto; /* Align to the left */ 
+    width: 75px; /* Adjust the size of the logo */
+    height: 75px; /* Maintain the aspect ratio */
+    background-color: white;
+    margin-right: 5px;
 }
 
 .carousel-control-prev,
@@ -712,4 +714,37 @@ h6,
 .copyright {
     color: #B0B9AE;
     border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+/** event style **/
+h1 {
+    margin: 0;
+}
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+.news-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.news-item h2 {
+    font-size: 1.5em;
+    
+}
+.news-item p {
+    font-size: 1em;
+    color: #666;
 }
