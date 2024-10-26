@@ -10,41 +10,14 @@
 
     <!-- OneSignal -->
     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-    <script>
-    window.OneSignalDeferred = window.OneSignalDeferred || [];
-    OneSignalDeferred.push(async function(OneSignal) {
-        await OneSignal.init({
-        appId: "02920e06-3209-4dfc-8f0b-f9dc624de262",
-        });
-         // Fonction pour vérifier l'état d'abonnement et mettre à jour le bouton
-         function updateButtonText(isEnabled) {
-            document.getElementById("followButton").innerText = isEnabled ? "Se désabonner" : "Suivre";
-        }
-
-        // Vérifier l'abonnement au chargement de la page
-        OneSignal.isPushNotificationsEnabled().then(function(isEnabled) {
-            updateButtonText(isEnabled);
-        });
-
-        // Ajouter un événement de clic pour le bouton
-        document.getElementById("followButton").addEventListener("click", function() {
-            OneSignal.isPushNotificationsEnabled().then(function(isEnabled) {
-                if (isEnabled) {
-                    // Désabonner
-                    OneSignal.setSubscription(false);
-                    alert("Vous ne suivez plus les notifications.");
-                    updateButtonText(false);
-                } else {
-                    // S’abonner
-                    OneSignal.registerForPushNotifications().then(function() {
-                        alert("Vous êtes maintenant abonné aux notifications.");
-                        updateButtonText(true);
-                    });
-                }
-            });
-        });
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "02920e06-3209-4dfc-8f0b-f9dc624de262",
     });
-    </script>
+  });
+</script>
     <!-- OneSignal -->
 
 
