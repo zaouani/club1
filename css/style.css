@@ -242,6 +242,10 @@ h6,
     background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
     background-size: cover;
 }
+.page-header1 {
+    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/Ourteam.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);

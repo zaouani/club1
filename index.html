@@ -8,6 +8,19 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <!-- OneSignal -->
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+        appId: "02920e06-3209-4dfc-8f0b-f9dc624de262",
+        });
+    });
+    </script>
+    <!-- OneSignal -->
+
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
