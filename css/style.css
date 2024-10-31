@@ -204,9 +204,9 @@ h6,
     position: relative;
     padding: 10px;
     left:auto; /* Align to the left */ 
-    width: 75px; /* Adjust the size of the logo */
-    height: 75px; /* Maintain the aspect ratio */
-    background-color: white;
+    width: 90px; /* Adjust the size of the logo */
+    height: 90px; /* Maintain the aspect ratio */
+    background-color: transparent;
     margin-right: 5px;
 }
 
