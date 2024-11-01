@@ -721,6 +721,36 @@ h6,
 }
 
 /** event style **/
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.item1 {
+    text-align: center;
+}
+
+.item1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optionnel : pour des bords arrondis */
+}
+
+.item1 p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+
 /* Container styling */
 .news-container {
     display: grid;
