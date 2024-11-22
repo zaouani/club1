@@ -252,6 +252,10 @@ h6,
     background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/Ourteam.jpg) center center no-repeat;
     background-size: cover;
 }
+.page-header2 {
+    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 20%), url(../img/eventakt.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
@@ -742,12 +746,21 @@ h6,
 
 .item1 {
     text-align: center;
+    transition: transform 0.3s ease;
 }
+.item1 :hover {
+    transform: translateY(-5px);
+  }
 
 .item1 img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Optionnel : pour des bords arrondis */
+    border-radius: 8px; 
+}
+.item1 iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
 }
 
 .item1 p {
